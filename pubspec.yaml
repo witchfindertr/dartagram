@@ -1,6 +1,6 @@
 name: dartagram
 description: An Instagram public API wrapper with cache.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/holy-crusader-py/dartagram
 
 environment:
