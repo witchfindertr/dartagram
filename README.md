@@ -1,5 +1,10 @@
 # Dartagram 🦤
- Dartagram (best name ever) is an Instagram wrapper that don't require Instagram API key to work. It'll provide a cache system to reduce API usage (but not currently available).
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/holy-crusader-py/dartagram/publish.yml?style=flat)
+![Pub Version (including pre-releases)](https://img.shields.io/pub/v/dartagram?style=flat)
+![Pub Points](https://img.shields.io/pub/points/dartagram?style=flat)
+![GitHub top language](https://img.shields.io/github/languages/top/holy-crusader-py/dartagram?style=flat)
+
+Dartagram (best name ever) is an Instagram wrapper that don't require Instagram API key to work. It'll provide a cache system to reduce API usage (but not currently available).
 
 ## Usage
 ### Basic usage
