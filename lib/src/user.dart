@@ -12,7 +12,7 @@ class User {
   late String username;
   late String profilePicUrl;
   late Biography biography;
-  late List<dynamic> pronouncs;
+  late List<dynamic> pronouns;
   late bool blockedByViewer;
   late dynamic restrictedByViewer; // Can be bool or null
   late bool countryBlock;
@@ -32,7 +32,7 @@ class User {
 
     if (httpPackageResponse.statusCode != 200) {
       throw Exception(
-          'Failed to load user profile, ended with status code ${httpPackageResponse.statusCode}');
+          'Failed to load user profile, ended with status code ${httpPackageResponse.statusCode}\n ${httpPackageResponse.body}');
     }
 
     if (httpPackageResponse.headers['content-type'] != 'application/json') {
@@ -54,7 +54,7 @@ class User {
     user.username = data['username'];
     user.profilePicUrl = data['profile_pic_url'];
     user.biography = Biography.fromData(data);
-    user.pronouncs = data['pronouns'];
+    user.pronouns = data['pronouns'];
     user.blockedByViewer = data['blocked_by_viewer'];
     user.restrictedByViewer = data['restricted_by_viewer'];
     user.countryBlock = data['country_block'];
