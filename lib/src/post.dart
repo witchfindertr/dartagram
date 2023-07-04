@@ -7,8 +7,7 @@ class Post {
   late String type;
   late Owner owner;
   late List<Media> medias;
-  late List<Map<String, Map<String, String>>>
-      captions; // Can be List<String> or null
+  late List<dynamic> captions; // Can be List<String> or null
   late int likeCount;
   late int commentCount;
   late String displayUrl;

@@ -35,7 +35,8 @@ class User {
           'Failed to load user profile, ended with status code ${httpPackageResponse.statusCode}\n ${httpPackageResponse.body}');
     }
 
-    if (httpPackageResponse.headers['content-type'] != 'application/json') {
+    if (!httpPackageResponse.headers['content-type']!
+        .contains('application/json')) {
       throw Exception(
           'Failed to load user profile, content type is not application/json, probably due to a rate limit');
     }
